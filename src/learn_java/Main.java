@@ -21,5 +21,43 @@ public class Main {
 		System.out.println("Integer.MIN_VALUE: " + Integer.MIN_VALUE);
 		System.out.println("Integer.BYTES: " + Integer.BYTES);
 		System.out.println("Integer in bit: " + Integer.SIZE);
+
+		// Java Operators
+
+		System.out.println("");
+
+		int int1 = 5;
+		int int2 = 3;
+
+		int result;
+
+		// addition
+		result = int1 + int2;
+		System.out.println("addition 5 + 3: " + result);
+		// addition using printf
+		System.out.printf("addition with printf %d + %d = %d \n",int1,int2,result);
+
+		// substraction
+		result = int1 - int2;
+		System.out.println("substraction 5 - 3: " + result);
+
+		// multiplication
+		result = int1 * int2;
+		System.out.println("multiplication 5 * 3: " + result);
+
+		// integer division
+		result = int1 / int2;
+		System.out.println("integer division 5 / 3: " + result);
+		// float division
+		float float1 = 5;
+		float float2 = 3;
+		float result2;
+		result2 = float1 / float2;
+		System.out.println("float division 5 / 3: " + result2);
+
+		// modulo
+		result = int1 % int2;
+		System.out.println("modulo 5 % 3: " + result);
+
 	}
 }
