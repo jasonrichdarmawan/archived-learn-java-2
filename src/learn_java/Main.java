@@ -120,5 +120,20 @@ public class Main {
 		int13 += 10;
 		System.out.println("Operator assignemnt int13 += 10: " + int13);
 
+		// Operator comparison
+		int int14, int15;
+		int14 = 10;
+		int15 = 10;
+
+		System.out.printf(
+			"Is int14 == int15: %s \n",
+			(int14 == int15)
+		);
+		System.out.printf("Is int14 != int15: %s \n",int14 != int15);
+		System.out.printf("Is int14 < int15: %s \n", int14 < int15);
+		System.out.printf("Is int14 > int15: %s \n", int14 > int15);
+		System.out.printf("Is int14 <= int15: %s \n", int14 <= int15);
+		System.out.printf("Is int14 >= int15: %s \n", int14 >= int15);
+
 	}
 }
