@@ -1,0 +1,1 @@
+This repository is used for self introductory to Java. The coding style does not follow any template hence you will see a spaghetti code.
