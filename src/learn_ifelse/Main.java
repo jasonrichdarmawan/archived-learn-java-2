@@ -14,5 +14,20 @@ public class Main {
         }
 
         System.out.println("finished");
+
+        // nested if
+
+        System.out.println("Start: Nested If Else statement");
+
+        if (a == 1) {
+            System.out.println("integer a value: " + a);
+            if (a <= 1) {
+                System.out.println("integer value is less than or equal to: 1");
+            }
+        } else {
+            System.out.println("integer a value is not equal to 1");
+        }
+
+        System.out.println("End: Nested If Else Statement");
     }
 }
