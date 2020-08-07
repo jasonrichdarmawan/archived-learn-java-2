@@ -135,5 +135,24 @@ public class Main {
 		System.out.printf("Is int14 <= int15: %s \n", int14 <= int15);
 		System.out.printf("Is int14 >= int15: %s \n", int14 >= int15);
 
+		// Operator Logic (OR, AND, XOR, NOT)
+		// XOR / exclusive XOR is a logical operator that outputs true only when the inputs differ. Real life scenario: ON / OFF of a Lamp in the attic (2 switches to control 1 lamp).
+		
+		boolean a, b, c;
+
+		a = true;
+		b = false;
+		c = (a || b);
+		System.out.println("true OR false: " + c);
+		c = (a && b);
+		System.out.println("true AND false: " + c);
+		c = (a ^ b);
+		System.out.println("XOR logic: a ^ b");
+		System.out.println("true XOR false: " + c);
+		c = (a && !b || !a && b);
+		System.out.println("XOR logic: a && !b || !a && b");
+		System.out.println("true XOR false: " + c);
+
+
 	}
 }
