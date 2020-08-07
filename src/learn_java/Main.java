@@ -115,5 +115,10 @@ public class Main {
 		System.out.println("unary without negation boolean1: " + boolean1);
 		System.out.println("unary with negation !boolean1: " + !boolean1);
 
+		// Operator assignemnt
+		int int13 = 10;
+		int13 += 10;
+		System.out.println("Operator assignemnt int13 += 10: " + int13);
+
 	}
 }
