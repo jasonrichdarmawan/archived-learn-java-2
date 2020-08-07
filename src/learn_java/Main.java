@@ -92,5 +92,28 @@ public class Main {
 		float result4 = (float) int7 / int8;
 		System.out.println("int division with float result: 10 / 4" + result4);
 
+		// Java Unary Operator
+
+		int int9 = 10;
+		System.out.printf("unary '-' %d to: %d \n", int9, -int9);
+
+		// Unary increment and decrement
+		int int10 = 10;
+		int10++; // int10--
+		System.out.println("unary increment int10++ from 10 to: " + int10);
+
+		// Unary prefix and postfix
+		int int11 = 10;
+		System.out.printf("unary prefix ++int11. Expected output: 11, actual output: %d \n", ++int11);
+
+		int int12 = 10;
+		System.out.printf("unary postfix int11++. Expected output: 11, actual output: %d \n", int12++);
+		System.out.println("variable int12 was printed before the calculation. This is the updated variable int12: " + int12);
+
+		// unary boolean negation
+		boolean boolean1 = true;
+		System.out.println("unary without negation boolean1: " + boolean1);
+		System.out.println("unary with negation !boolean1: " + !boolean1);
+
 	}
 }
