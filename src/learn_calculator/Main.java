@@ -20,6 +20,8 @@ public class Main {
         System.out.print("Enter the value for variable b: ");
         b = userInput.nextFloat();
 
+        userInput.close();
+
         System.out.println("user input: " + a + " " + operator + " " + b);
 
         if (operator == '+') {
