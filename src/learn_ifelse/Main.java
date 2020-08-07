@@ -48,5 +48,20 @@ public class Main {
         }
 
         System.out.println("End: Switch Case");
+
+        // tenary operator
+        // condition ? if statement true : if statement false
+
+        System.out.println("Start: Tenary Operator");
+
+        a = 5;
+
+        int x;
+
+        x = (a == 5) ? 5 : 0;
+
+        System.out.println("Integer x value with tenary operator: " + x);
+
+        System.out.println("End: Tenary Operator");
     }
 }
