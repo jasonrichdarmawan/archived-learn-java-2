@@ -59,5 +59,38 @@ public class Main {
 		result = int1 % int2;
 		System.out.println("modulo 5 % 3: " + result);
 
+		// Java Type Conversion
+
+		// Int (4 bytes) -> Long (8 bytes): no problem
+		int int3 = 256; // 32 bit
+		long long1 = int3; // 64 bit
+		System.out.println("Java type conversion int (32 bit) -> long (64 bit): " + long1);
+
+		// Int (4 bytes) -> Byte (1 byte): problem occured, solution: use data type casting
+		// byte byte1 = int3;
+		byte byte2 = (byte) int3;
+		System.out.println("int (4 bytes) -> byte (1 byte) with the data type casting. Expected output: 256, actual output: " + byte2);
+		System.out.println("Byte.MAX_VALUE: " + Byte.MAX_VALUE);
+		System.out.println("Byte.MIN_VALUE: " + Byte.MIN_VALUE);
+
+		// problem: calculation using different data types
+		int int4 = 10;
+		int int5 = 4;
+		
+		float result3 = int4 / int5;
+		System.out.println("int division with float result 10 / 4: " + result3);
+
+		// solution: use the result3 data type in one of the variable.
+		int int6 = 10;
+		float float3 = 4;
+		result3 = int6 / float3;
+		System.out.println("division with different data types 10 / 4: " + result3);
+
+		// solution: use data type casting
+		int int7 = 10;
+		int int8 = 4;
+		float result4 = (float) int7 / int8;
+		System.out.println("int division with float result: 10 / 4" + result4);
+
 	}
 }
