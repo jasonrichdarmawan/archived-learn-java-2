@@ -5,7 +5,7 @@ public class Main {
         int y;
         y = calculate(5);
         System.out.println("(5 + 2) * 10: " + y);
-
+        print("whatever");
     }
 
     // method
@@ -13,5 +13,10 @@ public class Main {
         int result;
         result = (x + 2) * 10;
         return result;
+    }
+
+    // void method
+    private static void print (String input) {
+        System.out.print(input + "\n");
     }
 }
