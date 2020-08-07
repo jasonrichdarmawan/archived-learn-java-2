@@ -153,6 +153,66 @@ public class Main {
 		System.out.println("XOR logic: a && !b || !a && b");
 		System.out.println("true XOR false: " + c);
 
+		// Operator Bitwise
+		// 1 byte = 8 bit.
+		// 1 = 00000001
+		// 2 = 00000010
+		// 3 = 00000011
+		// 4 = 00000100
+		byte byte3 = 4;
+		String byte3_bit;
+		byte3_bit = String.format("%8s", Integer.toBinaryString(byte3)).replace(' ', '0');
+		System.out.printf("Operator Bitwsie %s = %d \n", byte3_bit, byte3);
 
+		// Operator Shift Left
+		byte3 = (byte) (byte3 << 1);
+		byte3_bit = String.format("%8s", Integer.toBinaryString(byte3)).replace(' ', '0');
+		System.out.printf("Operator Shift Left %s = %d \n", byte3_bit, byte3);
+
+		// Operator Shift Right
+		byte3 = (byte) (byte3 >> 1);
+		byte3_bit = String.format("%8s", Integer.toBinaryString(byte3)).replace(' ', '0');
+		System.out.printf("Operator Shift Right %s = %d \n", byte3_bit, byte3);
+
+		// Operator Bitwise OR, AND, XOR, NOT
+
+		byte a1 = 24;
+		String a1_bit = String.format("%8s", Integer.toBinaryString(a1)).replace(' ', '0');
+		System.out.printf("Operator Bitwsie %s = %d \n", a1_bit, a1);
+
+		byte b1 = 12;
+		String b1_bit = String.format("%8s", Integer.toBinaryString(b1)).replace(' ', '0');
+		System.out.printf("Operator Bitwsie %s = %d \n", b1_bit, b1);
+
+		// Operator Bitwise OR
+		System.out.println("==== Operator Bitwise OR");
+
+		byte c1 = (byte) (a1 | b1);
+		String c1_bit = String.format("%8s", Integer.toBinaryString(c1)).replace(' ', '0');
+		System.out.printf("Operator Bitwise %s = %d \n", c1_bit, c1);
+
+		// Operator Bitwise AND
+		System.out.println("==== Operator Bitwise AND");
+
+		c1 = (byte) (a1 & b1);
+		c1_bit = String.format("%8s", Integer.toBinaryString(c1)).replace(' ', '0');
+		System.out.printf("Operator Bitwise OR %s = %d \n", c1_bit, c1);
+
+		// Operator Bitwise XOR
+		System.out.println("==== Operator Bitwise XOR");
+
+		c1 = (byte) (a1 ^ b1);
+		c1_bit = String.format("%8s", Integer.toBinaryString(c1)).replace(' ', '0');
+		System.out.printf("Operator Bitwise %s = %d \n", c1_bit, c1);
+
+		// Operator Bitwise NOT
+		System.out.println("==== Operator Bitwise NOT");
+		a1 = 24;
+		a1_bit = String.format("%8s", Integer.toBinaryString(a1)).replace(' ', '0');
+		System.out.printf("Operator Bitwsie %s = %d \n", a1_bit, a1);
+
+		b1 = (byte) (~a1);
+		b1_bit = String.format("%8s", Integer.toBinaryString(b1).substring(24));
+		System.out.printf("Operator Bitwise %s = %d \n", b1_bit, b1);
 	}
 }
