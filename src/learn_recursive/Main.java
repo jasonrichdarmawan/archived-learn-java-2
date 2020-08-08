@@ -8,11 +8,18 @@ public class Main {
 
     private static int totalSum(int input) {
         System.out.println("input: " + input);
-        if (input == 0) return input;
+        if (input == 0) return input; // input = 0;
         else return input + totalSum(input - 1);
+        // else return input + totalSum(input - 1);
         // output:
         // 2 + totalSum(2 - 1)
         // 2 + 1 + totalSum(1 - 1)
         // 2 + 1 + 0
+
+        // else return totalSum(input - 1);
+        // output:
+        // totalSum(2 - 1);
+        // totalSum(1 - 1);
+        // 0;
     }
 }
