@@ -35,5 +35,42 @@ public class Main {
         newarray[0] = 10;
         System.out.println(numbers[0]);
         System.out.println(newarray[0]);
+
+        // .copyOf()
+        int[] copyOfArray = Arrays.copyOf(newarray, 5);
+        System.out.println(Arrays.toString(copyOfArray));
+
+        // .copyOfRange()
+        int[] copyOfRangeArray = Arrays.copyOfRange(newarray, 2, 5);
+        System.out.println(Arrays.toString(copyOfRangeArray));
+
+        // fill array: useful for 1 and 0 boolean
+        int[] fillArray = new int[10];
+        Arrays.fill(fillArray, 1);
+        System.out.println(Arrays.toString(fillArray));
+
+        // array comparison
+        int[] compareArray1 = {1,2,3,4,5};
+        int[] compareArray2 = {1,2,3,4,5};
+
+        // unique behavior: array comparison.
+        if (compareArray1 == compareArray2) {
+            System.out.println("identical array");
+        } else {
+            System.out.println("not identical array");
+        }
+
+        // solution to this unique behavior is to use Arrays.equals();
+        if (Arrays.equals(compareArray1, compareArray2)) {
+            System.out.println("identical array");
+        } else {
+            System.out.println("not identical array");
+        }
+
+        // search array is not indexOf equivalent of JavaScript.
+        int[] searchArray = {1,6,4,5,3,5,2,6};
+        Arrays.sort(searchArray);
+        System.out.println(Arrays.toString(searchArray));
+        System.out.println(Arrays.binarySearch(searchArray, 5));
     }
 }
