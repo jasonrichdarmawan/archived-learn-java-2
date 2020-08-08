@@ -72,5 +72,15 @@ public class Main {
         Arrays.sort(searchArray);
         System.out.println(Arrays.toString(searchArray));
         System.out.println(Arrays.binarySearch(searchArray, 5));
+
+        // for each nested loop
+        int[][] numb = {
+            {1,2,5},
+            {1,2,4}
+        };
+
+        for (int[] num : numb) {
+            System.out.println(Arrays.toString(num));
+        };
     }
 }
