@@ -15,5 +15,11 @@ public class Main {
         // nested array
         int[][] nestedArray = new int[5][5];
         System.out.println(Arrays.deepToString(nestedArray));
+
+        // for-each loop
+        int[] numbers = {1,2,3};
+        for (int number : numbers) {
+            System.out.println(number);
+        }
     }
 }
