@@ -1,7 +1,7 @@
 package learn_error;
 
-import java.io.FileInputStream;
-import java.io.IOException;
+// import java.io.FileInputStream;
+// import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
@@ -20,7 +20,7 @@ public class Main {
         //     System.err.println(e);
         // }
 
-        FileInputStream fileInput = null;
+        // FileInputStream fileInput = null;
 
         // runtime error
         // try { 
